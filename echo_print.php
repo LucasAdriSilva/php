@@ -7,9 +7,10 @@
     <title>Curso PHP</title>
 </head>
 <body>
-    <?php echo 'Ultilizando a tag padrão'; ?>
-    <br/>
-    <?= 'Ultilizando a tag impressão' ?>
-
-</body>
+    <?php 
+    echo 'Comando echo <br/>'; //construtor da linguagem
+   
+    echo print "Comando print <hr/>"//print() ou print"" é uma função
+    ?>
+</body> 
 </html>
