@@ -21,6 +21,10 @@
     $peso = 91.3;
     //boolean se for true = 1 se não retorna nada
     $fumante_sn = true;  
+
+    //....Lógica...//
+    $idade = '56';
+
     ?>
 
     <h1>Ficha Cadastral</h1>
