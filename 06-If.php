@@ -27,41 +27,58 @@
  
       */
 
-    if (!(4 <> 4)) {
-        echo  'verdadeiro';
-        echo  '1';
-    }
-    if (4 <> 5 XOR 5 == 9) {
-        echo  'verdadeiro';
-        echo  '2';
-    }
-    if (4 == 4 AND 3 == 4) {
-        echo  'verdadeiro';
-        echo  '3';
-    }
-    if (4 == 4 OR 3 == 4) {
-        echo  'verdadeiro';
-        echo  '4';
-    }
+    // if (!(4 <> 4)) {
+    //     echo  'verdadeiro';
+    //     echo  '1';
+    // }
+    // if (4 <> 5 xor 5 == 9) {
+    //     echo  'verdadeiro';
+    //     echo  '2';
+    // }
+    // if (4 == 4 and 3 == 4) {
+    //     echo  'verdadeiro';
+    //     echo  '3';
+    // }
+    // if (4 == 4 or 3 == 4) {
+    //     echo  'verdadeiro';
+    //     echo  '4';
+    // }
 
+    // $usuario_cartao = true;
+    // $valor = 250;
+    // $valor_frete = 50;
+    // $recebeu_desconto = false;
+
+    // if ($usuario_cartao == true and $valor >= 100) {
+    //     $valor_frete = 0;
+    //     $recebeu_desconto = true;
+    //     echo "<br/> Valor da compra tera desconto no frete e sera = $valor_frete";
+    // }
+
+    // ?>
+
+    <h3>Informações de pedido</h3>
+
+    <?php
+    // if ($recebeu_desconto == true) {
+    //     echo "Seu pedido já está com desconto";
+    // }
+
+    // ?>
+    <!--Encadeado-->
+
+    <?php
     $usuario_cartao = true;
     $valor = 250;
     $valor_frete = 50;
     $recebeu_desconto = false;
 
-    if($usuario_cartao ==true AND $valor >= 100){
+    if ($usuario_cartao == true and $valor <> 500) {
         $valor_frete = 0;
         $recebeu_desconto = true;
-        echo"<br/> Valor da compra tera desconto no frete e sera = $valor_frete";
-    }
-
-    ?>
-
-    <h3>Informações de pedido</h3>
-
-    <?php
-    if ($recebeu_desconto == true){
-        echo "Seu pedido já está com desconto";
+        echo "<br/> Valor da compra tera desconto no frete e sera = $valor_frete";
+    } else if($valor = 500){
+        echo "<br/>Carai borracha você gastou= $valor kkkk";
     }
 
     ?>
