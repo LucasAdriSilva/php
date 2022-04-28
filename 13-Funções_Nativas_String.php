@@ -70,7 +70,7 @@
     echo $timefin. "<br/>";
     echo gettype($timefin). "<br/>";
 
-    $res2 = $timeini - $datafinal;
+    $res2 = abs($timeini - $datafinal);
     echo $res2;
 
    /*strotime(data);*/
