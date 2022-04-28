@@ -10,8 +10,12 @@
 
 <body>
     <?php
-    //Sequencias Numericos
-    $lista_frutas = array("Banana","Maça","Motango","Uva");
+    //------------------------Sequencias Numericos------------------------
+
+    // $lista_frutas = array("Banana","Maça","Motango","Uva","Limão");
+    $lista_frutas = ["Banana", "Maça", "Morango", "Uva", "Limão"];
+    $lista_frutas[] = "Abacaxi";
+
     echo '<pre>';
     var_dump($lista_frutas);
     echo '</pre>';
@@ -19,13 +23,56 @@
     echo "<hr/>";
 
     echo '<pre>';
-
     print_r($lista_frutas);
     echo '</pre>';
 
-    //Associativos
+    echo $lista_frutas[3] . "<br/><br/><br/>";
+
+    //------------------------Associativos------------------------
+
+    $lista_fruta = [
+        'a' => "Banana",
+        'b' => "Maça",
+        'c' => "Morango",
+        '23' => "Uva",
+        'f' => "Limão"
+    ];
+
+    $lista_fruta[24] = "Kiwi";
+
+    echo '<pre>';
+    var_dump($lista_fruta);
+    echo '</pre>';
+
+    echo "<hr/>";
+
+    echo '<pre>';
+
+    print_r($lista_fruta);
+    echo '</pre>';
+    echo "<br/><br/><br/><br/><br/><br/>";
+
+    //-----------------------------------ARRAY MULTIDIMENCIONAL--------------------------------
+    $lista_coisas = [];
+
+    $lista_coisas['frutas'] = ['1' => 'Banana' , '2' => 'Maça', '3' => 'Morango', '4' => 'Uva'];
+    $lista_coisas['pessoas'] = ['1' => 'Lucas' , '2' => 'Brenno', '3' => 'Carlos', '4' => 'Caio'];
+
+    echo '<pre>';
+    print_r($lista_coisas);
+    echo '</pre>';
+
+    echo "<hr/>";
+
+
+    echo $lista_coisas['frutas'][3].'<br/>';
+    echo $lista_coisas['pessoas'][2];
+
+
+
 
     ?>
+
 </body>
 
 </html>
