@@ -56,7 +56,7 @@
     $lista_coisas = [];
 
     $lista_coisas['frutas'] = ['1' => 'Banana' , '2' => 'Maça', '3' => 'Morango', '4' => 'Uva'];
-    $lista_coisas['pessoas'] = ['1' => 'Lucas' , '2' => 'Brenno', '3' => 'Carlos', '4' => 'Caio'];
+    $lista_coisas['pessoas'] = ['1' => 'Lucas' , '2' => 'Breno', '3' => 'Carlos', '4' => 'Caio'];
 
     echo '<pre>';
     print_r($lista_coisas);
@@ -66,10 +66,22 @@
 
 
     echo $lista_coisas['frutas'][3].'<br/>';
-    echo $lista_coisas['pessoas'][2];
+    echo $lista_coisas['pessoas'][2] .'<br/><br/><br/><br/><br/>';
+
+    //------------------------------Pesquisando dentro de Array----------------------------
+
+    //in_array()
+    //array_search()
+
+     $existe =  in_array('Banana', $lista_coisas['frutas']);
+     if($existe){
+         echo 'Sim, o valor pesquisado existe no array <br/>';
+     }else{
+        echo 'Não, o valor pesquisado não existe no array <br/>';
+     };
 
 
-
+     echo array_search('Uva', $lista_coisas['frutas'])
 
     ?>
 
