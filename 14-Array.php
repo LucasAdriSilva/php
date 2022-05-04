@@ -85,16 +85,34 @@
 
     //------------------------------Funções nativas de array----------------------------
 
-    $nomes =['1' => 'Lucas','2' => 'Carlos','5' => 'Experandio'];
+    $nomes = ['Lucas', 'Carlos', 'Experandio'];
+    $name = ['Caio', 'Breno'];
+    $total_name = array_merge($nomes, $name);
+    $string = '03/05/2022';
 
-    echo is_array($nomes);
-    echo array_keys($nomes);
-    echo sort($nomes);
-    echo asort($nomes);
-    echo count($nomes);
-    echo array_merge($nomes);
-    echo explode($nomes);
-    echo implode($nomes);
+    echo '1:  ' . is_array($nomes) . '<br/>'; // verifica se o parâmetro é um array
+    echo '2: ' . array_keys($nomes) . '<br/>'; // retorna todas as chaves de um array
+    echo '3:  ' . sort($nomes) . '<br/>'; //orderna um array e reajusta seus indices (return treu ~ false)
+    echo '4:  ' . asort($nomes) . '<br/>'; //ordena um array  preservando os indices
+    echo '5:  ' . count($nomes) . '<br/>'; //conta a quantidade de elemntos de um array
+
+    echo '6:  ' . '<pre>';
+    print_r($total_name);
+    echo '</pre>' . '<br/>'; //funde um ou mais array's
+
+
+    $res3 = explode('/',$string); //divide uma string baseada em um delimitador
+
+    echo '7: <pre>';
+    print_r($res3);
+    echo '</pre>' . '<br/>';
+
+
+    $res4 = implode(',', $nomes); //junta elementos de um array em uma string
+
+    echo '8: <pre>';
+    print_r($res4);
+    echo '</pre>' . '<br/>';
 
     ?>
 
